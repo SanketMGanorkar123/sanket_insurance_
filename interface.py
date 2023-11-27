@@ -1,4 +1,4 @@
-pip list --format=freeze > requirements.txt
+
 from distutils.command.config import config
 from flask import Flask, jsonify, render_template, request
 from project_app.utils import MedicalInsurance
@@ -62,4 +62,4 @@ def get_insurance_charges():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False,host ='0.0.0.0')
