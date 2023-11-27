@@ -3,7 +3,7 @@ from distutils.command.config import config
 from flask import Flask, jsonify, render_template, request
 from project_app.utils import MedicalInsurance
 import config
-from werkzeug.utils import url_quote
+
 
 app = Flask(__name__)
 
